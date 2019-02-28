@@ -1,0 +1,57 @@
+body{
+	margin: 20px;
+
+}
+
+
+
+.vignette h4
+{
+	
+	color: white;
+	
+	font-size: 80px;
+}
+
+.vignette p
+{	
+	background-color: white;
+	color: black;
+	opacity: 0.8;
+	border-radius: 5px;
+	font-size: 50px;
+
+}
+
+.vignette img
+{
+	filter: opacity(50%);
+}
+
+.money
+{
+	color: orange;
+}
+
+.vignette:hover img
+{
+filter:opacity(95%);
+transition-duration: 0.5s;
+}
+
+
+.vignette:hover .Perso
+{
+	transform-origin: 50% 50%;
+	transition-duration: 0.5s;
+	transform: translate(-10px, 550px) scale(0.5);
+}
+
+.vignette:hover .reward1
+{
+	filter: opacity(0%);
+	transition-duration: 0.5s;
+}
+
+
+
