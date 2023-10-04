@@ -14,6 +14,25 @@
       }
     }
 
+    a.highlight-link {
+      color: #3498db;
+      font-weight: bold;
+      font-size: 1.2em;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Style au survol */
+    a.highlight-link:hover {
+      background-color: #3498db;
+      color: #ffffff;
+    }
+
+    a.highlight-link:active {
+      background-color: #2980b9;
+    }
+
     .hide {
       display: none;
     }
@@ -149,17 +168,21 @@
 
   <h2><strong>Aie Aie Aie...</strong></h2>
   <h2><strong>Vous avez commis une erreur en cliquant sur ce lien !</strong></h2>
-  <p>Mais pas de panique, rien de grave ne s’est produit. En revanche, tout aurait &eacute;t&eacute; diff&eacute;rent si
+  <p>Mais pas de panique, rien de grave ne s’est produit. En revanche, tout aurait &eacute;t&eacute;
+    diff&eacute;rent si
     j'&eacute;tais quelqu'un de malveillant !</p>
   <p>Vous avez en effet cliqu&eacute; sur un e-mail de phishing et
     cela aurait pu avoir de graves cons&eacute;quences,
-    telles que le vol de vos donn&eacute;es bancaires et personnelles ou encore l'usurpation d'identit&eacute;.</p>
+    telles que le vol de vos donn&eacute;es bancaires et personnelles ou encore l'usurpation d'identit&eacute;.
+  </p>
 
   <div style="text-align: center;"><img style="text-align: center;"
       src="https://img.veeam.com/blog/wp-content/uploads/2021/05/06221010/phishing.png" /></div>
   <div style="text-align: center;">
-    <p><span style="color: green;">" Qu’est-ce qu’un mail de phishing ? <br /> Un e-mail est envoyé au destinataire, qui
-        tombe dans le piège et effectue l'action prévue. En conséquence, des informations sont dérobées ou un ordinateur
+    <p><span style="color: green;">" Qu’est-ce qu’un mail de phishing ? <br /> Un e-mail est envoyé au
+        destinataire, qui
+        tombe dans le piège et effectue l'action prévue. En conséquence, des informations sont dérobées ou un
+        ordinateur
         est infecté."</span></p>
   </div>
 
@@ -174,8 +197,10 @@
     <div class="corrected-text ng-star-inserted">
       <h3>Voici quelques mesures préventives que nous vous recommandons de suivre :</h1>
         <ul>
-          <li>V&eacute;rifiez toujours l'adresse e-mail de l'exp&eacute;diteur de l'e-mail suspect. N'h&eacute;sitez pas
-            &agrave; copier et coller l'adresse sur un moteur de recherche pour confirmer son authenticit&eacute;.Si ce
+          <li>V&eacute;rifiez toujours l'adresse e-mail de l'exp&eacute;diteur de l'e-mail suspect.
+            N'h&eacute;sitez pas
+            &agrave; copier et coller l'adresse sur un moteur de recherche pour confirmer son
+            authenticit&eacute;.Si ce
             dernier n'est cit&eacute; nulle part sur Google, alors prenez garde, cela peut ressembler &agrave; du
             phishing !</p>
         </ul>
@@ -202,7 +227,8 @@
             <p>Nous vous remercions par avance de votre contribution.</p>
           </strong></h2>
 
-        <p>Lien vers le questionnaire : <a>https://forms.gle/PB33MzeqaKaXkGXQ8</a></p>
+        <p>Lien vers le questionnaire : <a href="https://forms.gle/PB33MzeqaKaXkGXQ8"
+            class="highlight-link">https://forms.gle/PB33MzeqaKaXkGXQ8</a></p>
         <p>L’équipe informatique.</p>
 
     </div>
