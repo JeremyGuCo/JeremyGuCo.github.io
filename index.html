@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Alerte phishing</title>
-    <style>
 
-
-  @keyframes slideIn {
+<head>
+  <title>Alerte phishing</title>
+  <style>
+    @keyframes slideIn {
       0% {
         transform: translateY(100%);
       }
+
       100% {
         transform: translateY(0);
       }
@@ -33,98 +33,110 @@
     }
 
 
-#logo {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width:150px; /* Définir la largeur souhaitée */
-      }
+    #logo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 150px;
+      /* Définir la largeur souhaitée */
+    }
 
 
-      body {
-        background-color: rgba;
-      }
-      #email-container {
-        margin: 50px auto;
-        width: 800px;
-        background-color: white;
-        padding: 20px;
-        position: relative;
-      }
-      #banner {
-        background-image: url('https://assets.dorik.com/6037c4f0a65b7000113189d6/images/logo_color_xm219tbr.png');
-        height: 60px;
-        text-align: right;
-        padding: 10px;
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-      #mail-object {
-        font-weight: bold;
-        color: green;
-        margin-top: 20px;
-        position: relative;
-      }
-      #mail-text {
-        margin-top: 20px;
-      }
-      #button-container {
-        margin-top: 20px;
-        text-align: center;
-      }
-      #button {
-        background-color: green;
-        color: white;
-        padding: 10px 20px;
-        font-weight: bold;
-        border-radius: 5px;
-        text-decoration: none;
-      }
-      #button:hover {
-        background-color: darkgreen;
-      }
-      #photo-container {
-        margin-top: 20px;
-        text-align: center;
-      }
-      #footer {
-        font-size: 12px;
-        margin-top: 20px;
-        text-align: center;
-      }
+    body {
+      background-color: rgba;
+    }
+
+    #email-container {
+      margin: 50px auto;
+      width: 800px;
+      background-color: white;
+      padding: 20px;
+      position: relative;
+    }
+
+    #banner {
+      background-image: url('https://assets.dorik.com/6037c4f0a65b7000113189d6/images/logo_color_xm219tbr.png');
+      height: 60px;
+      text-align: right;
+      padding: 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    #mail-object {
+      font-weight: bold;
+      color: green;
+      margin-top: 20px;
+      position: relative;
+    }
+
+    #mail-text {
+      margin-top: 20px;
+    }
+
+    #button-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    #button {
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    #button:hover {
+      background-color: darkgreen;
+    }
+
+    #photo-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    #footer {
+      font-size: 12px;
+      margin-top: 20px;
+      text-align: center;
+    }
 
 
     /* Ajout des media queries pour la mise en page responsive */
-      @media only screen and (max-width: 800px) {
-        /* Styles à appliquer lorsque la largeur de l'écran est inférieure ou égale à 800px */
-        #email-container {
-          width: 100%;
-          max-width: 600px;
-          margin: 20px auto;
-        }
-      }
+    @media only screen and (max-width: 800px) {
 
-      @media only screen and (max-width: 480px) {
-        /* Styles à appliquer lorsque la largeur de l'écran est inférieure ou égale à 480px */
-        #email-container {
-          max-width: 300px;
-        }
+      /* Styles à appliquer lorsque la largeur de l'écran est inférieure ou égale à 800px */
+      #email-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
       }
+    }
 
-    </style>
-<script>
+    @media only screen and (max-width: 480px) {
+
+      /* Styles à appliquer lorsque la largeur de l'écran est inférieure ou égale à 480px */
+      #email-container {
+        max-width: 300px;
+      }
+    }
+  </style>
+  <script>
     function showAlert() {
       var alertElement = document.getElementById('alert');
       alertElement.classList.remove('hide');
-  
-      setTimeout(function() {
+
+      setTimeout(function () {
         alertElement.classList.add('hide');
       }, 5000);
     }
   </script>
 
-  </head>
+</head>
+
 <body onload="showAlert()">
   <div id="alert" class="hide">
     <p>Alerte tentative de phishing.</p>
@@ -132,70 +144,96 @@
 
 
 
-    <div id="banner"><img id="logo" src="https://assets.dorik.com/6037c4f0a65b7000113189d6/images/logo_color_xm219tbr.png" /></div> 
- 
-<h2><strong>Aie Aie Aie...</strong></h2>
-<h2><strong>Vous avez commis une erreur en cliquant sur ce lien !</strong></h2>
-<p>Mais pas de panique, rien de grave ne s’est produit. En revanche, tout aurait &eacute;t&eacute; diff&eacute;rent si j'&eacute;tais quelqu'un de malveillant !</p>
-<p>Vous avez en effet cliqu&eacute; sur un e-mail de phishing et
-cela aurait pu avoir de graves cons&eacute;quences, 
-telles que le vol de vos donn&eacute;es bancaires et personnelles ou encore l'usurpation d'identit&eacute;.</p>
+  <div id="banner"><img id="logo"
+      src="https://assets.dorik.com/6037c4f0a65b7000113189d6/images/logo_color_xm219tbr.png" /></div>
 
-<div style="text-align: center;"><img style="text-align: center;" src="https://img.veeam.com/blog/wp-content/uploads/2021/05/06221010/phishing.png" /></div>
-<div style="text-align: center;">
-  <p><span style="color: green;">" Qu’est-ce qu’un mail de phishing ? <br /> Un e-mail est envoyé au destinataire, qui tombe dans le piège et effectue l'action prévue. En conséquence, des informations sont dérobées ou un ordinateur est infecté."</span></p>
-</div>
+  <h2><strong>Aie Aie Aie...</strong></h2>
+  <h2><strong>Vous avez commis une erreur en cliquant sur ce lien !</strong></h2>
+  <p>Mais pas de panique, rien de grave ne s’est produit. En revanche, tout aurait &eacute;t&eacute; diff&eacute;rent si
+    j'&eacute;tais quelqu'un de malveillant !</p>
+  <p>Vous avez en effet cliqu&eacute; sur un e-mail de phishing et
+    cela aurait pu avoir de graves cons&eacute;quences,
+    telles que le vol de vos donn&eacute;es bancaires et personnelles ou encore l'usurpation d'identit&eacute;.</p>
 
-<br />
-<br />
-<p><br />Fort heureusement, il s’agit seulement ici d’une action de sensibilisation visant à vous
-informer des risques liés au phishing : nous tenons à vous rappeler l'importance de la
-sécurité informatique, incluant notamment la vigilance lors de la réception d'e-mails
-suspects..</p>
+  <div style="text-align: center;"><img style="text-align: center;"
+      src="https://img.veeam.com/blog/wp-content/uploads/2021/05/06221010/phishing.png" /></div>
+  <div style="text-align: center;">
+    <p><span style="color: green;">" Qu’est-ce qu’un mail de phishing ? <br /> Un e-mail est envoyé au destinataire, qui
+        tombe dans le piège et effectue l'action prévue. En conséquence, des informations sont dérobées ou un ordinateur
+        est infecté."</span></p>
+  </div>
 
-<div class="corrected-text ng-star-inserted">
-<div class="corrected-text ng-star-inserted">
-<h3>Voici quelques mesures préventives que nous vous recommandons de suivre :</h1>
-<ul>
-  <li>V&eacute;rifiez toujours l'adresse e-mail de l'exp&eacute;diteur de l'e-mail suspect. N'h&eacute;sitez pas &agrave; copier et coller l'adresse sur un moteur de recherche pour confirmer son authenticit&eacute;.Si ce dernier n'est cit&eacute; nulle part sur Google, alors prenez garde, cela peut ressembler &agrave; du phishing !</p>
-</ul> 
-<ul>
-<li>V&eacute;rifiez l'URL du site web lorsque vous cliquez sur un lien dans un e-mail suspect. Si l'URL ne correspond pas exactement &agrave; celle du site web officiel, soyez vigilant, c'est surement du phishing !</p>
-</ul>
-<ul>
-<li>Soyez vigilant quant aux e-mails vous demandant de confirmer vos informations bancaires, mais également à l'égard des entreprises vous demandant de mettre à jour vos coordonnées personnelles. Les entreprises ne vous demanderont jamais de telles informations en ligne, car elles disposent d&eacute;j&agrave; de toutes les informations dont elles ont besoin.Si en cliquant sur le lien pr&eacute;sent dans l'e-mail et que le page vous demande vos coordonn&eacute;es , <br />Fuyez ... C'est du phishing !</p>
-</ul>
-<ul>
-<li>Si vous avez un doute sur la l&eacute;gitimit&eacute; de l'e-mail ou du site web, n'h&eacute;sitez pas &agrave; contacter le service client de l'entreprise ou de la banque en question pour confirmer l'authenticit&eacute; <br/>de l'e-mail.</p>
-</ul>
-<h1><strong></strong></h1>
+  <br />
+  <br />
+  <p><br />Fort heureusement, il s’agit seulement ici d’une action de sensibilisation visant à vous
+    informer des risques liés au phishing : nous tenons à vous rappeler l'importance de la
+    sécurité informatique, incluant notamment la vigilance lors de la réception d'e-mails
+    suspects..</p>
 
-<h2><strong> <p>Nous vous remercions par avance de votre contribution.</p></strong></h2>
+  <div class="corrected-text ng-star-inserted">
+    <div class="corrected-text ng-star-inserted">
+      <h3>Voici quelques mesures préventives que nous vous recommandons de suivre :</h1>
+        <ul>
+          <li>V&eacute;rifiez toujours l'adresse e-mail de l'exp&eacute;diteur de l'e-mail suspect. N'h&eacute;sitez pas
+            &agrave; copier et coller l'adresse sur un moteur de recherche pour confirmer son authenticit&eacute;.Si ce
+            dernier n'est cit&eacute; nulle part sur Google, alors prenez garde, cela peut ressembler &agrave; du
+            phishing !</p>
+        </ul>
+        <ul>
+          <li>V&eacute;rifiez l'URL du site web lorsque vous cliquez sur un lien dans un e-mail suspect. Si l'URL ne
+            correspond pas exactement &agrave; celle du site web officiel, soyez vigilant, c'est surement du phishing !
+            </p>
+        </ul>
+        <ul>
+          <li>Soyez vigilant quant aux e-mails vous demandant de confirmer vos informations bancaires, mais également à
+            l'égard des entreprises vous demandant de mettre à jour vos coordonnées personnelles. Les entreprises ne
+            vous demanderont jamais de telles informations en ligne, car elles disposent d&eacute;j&agrave; de toutes
+            les informations dont elles ont besoin.Si en cliquant sur le lien pr&eacute;sent dans l'e-mail et que le
+            page vous demande vos coordonn&eacute;es , <br />Fuyez ... C'est du phishing !</p>
+        </ul>
+        <ul>
+          <li>Si vous avez un doute sur la l&eacute;gitimit&eacute; de l'e-mail ou du site web, n'h&eacute;sitez pas
+            &agrave; contacter le service client de l'entreprise ou de la banque en question pour confirmer
+            l'authenticit&eacute; <br />de l'e-mail.</p>
+        </ul>
+        <h1><strong></strong></h1>
 
-<p>Lien vers le questionnaire : https://forms.gle/PB33MzeqaKaXkGXQ8</p>
-<p>L’équipe informatique.</p>
+        <h2><strong>
+            <p>Nous vous remercions par avance de votre contribution.</p>
+          </strong></h2>
 
-</div>
-</div>
-<table style="border-collapse: collapse; color: #444; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 14px; line-height: 1.5; background-color: #fff;" border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
-<tbody>
-<tr style="border-color: transparent;">
-<td style="border-collapse: collapse; border-color: transparent;">
-<table style="border-collapse: collapse; color: #444; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 14px; line-height: 1.5;" width="100%" cellspacing="0" cellpadding="0">
-<tbody>
-<tr style="border-color: transparent;">
-<td class="expander" style="border-collapse: collapse; border-color: transparent;" colspan="2" width="100%" height="10"><span style="color: #000000;">&nbsp;</span></td>
-</tr>
-<tr class="content-row" style="border-color: transparent;">
-<td class="gutter" style="border-collapse: collapse; border-color: transparent; width: 30px !important;" width="30" height="100%"><span style="color: #000000;">&nbsp;</span></td>
-<td class="gutter" style="border-collapse: collapse; border-color: transparent; width: 30px !important;" width="30" height="100%"><span style="color: #000000;">&nbsp;</span></td>
-</tr>
-<tr style="border-color: transparent;">
-<td class="expander" style="border-collapse: collapse; border-color: transparent;" colspan="2" width="100%" height="30"><span style="color: #000000;">&nbsp;</span></td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
+        <p>Lien vers le questionnaire : <a>https://forms.gle/PB33MzeqaKaXkGXQ8</a></p>
+        <p>L’équipe informatique.</p>
+
+    </div>
+  </div>
+  <table
+    style="border-collapse: collapse; color: #444; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 14px; line-height: 1.5; background-color: #fff;"
+    border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+    <tbody>
+      <tr style="border-color: transparent;">
+        <td style="border-collapse: collapse; border-color: transparent;">
+          <table
+            style="border-collapse: collapse; color: #444; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 14px; line-height: 1.5;"
+            width="100%" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr style="border-color: transparent;">
+                <td class="expander" style="border-collapse: collapse; border-color: transparent;" colspan="2"
+                  width="100%" height="10"><span style="color: #000000;">&nbsp;</span></td>
+              </tr>
+              <tr class="content-row" style="border-color: transparent;">
+                <td class="gutter" style="border-collapse: collapse; border-color: transparent; width: 30px !important;"
+                  width="30" height="100%"><span style="color: #000000;">&nbsp;</span></td>
+                <td class="gutter" style="border-collapse: collapse; border-color: transparent; width: 30px !important;"
+                  width="30" height="100%"><span style="color: #000000;">&nbsp;</span></td>
+              </tr>
+              <tr style="border-color: transparent;">
+                <td class="expander" style="border-collapse: collapse; border-color: transparent;" colspan="2"
+                  width="100%" height="30"><span style="color: #000000;">&nbsp;</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
