@@ -3,157 +3,7 @@
 
 <head>
   <title>Alerte phishing</title>
-  <style>
-    @keyframes slideIn {
-      0% {
-        transform: translateY(100%);
-      }
-
-      100% {
-        transform: translateY(0);
-      }
-    }
-
-    a.highlight-link {
-      color: #3498db;
-      font-weight: bold;
-      font-size: 1.2em;
-      padding: 10px;
-      border-radius: 5px;
-      transition: background-color 0.3s, color 0.3s;
-    }
-
-    /* Style au survol */
-    a.highlight-link:hover {
-      background-color: #3498db;
-      color: #ffffff;
-    }
-
-    a.highlight-link:active {
-      background-color: #2980b9;
-    }
-
-    .hide {
-      display: none;
-    }
-
-
-    #alert {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #ff0000;
-      color: #ffffff;
-      font-size: 24px;
-      padding: 20px;
-      border-radius: 5px;
-      animation: slideIn 0.5s ease-in-out;
-    }
-
-
-    #logo {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 150px;
-      /* Définir la largeur souhaitée */
-    }
-
-
-    body {
-      background-color: rgba;
-    }
-
-    #email-container {
-      margin: 50px auto;
-      width: 800px;
-      background-color: white;
-      padding: 20px;
-      position: relative;
-    }
-
-    #banner {
-      background-image: url('https://assets.dorik.com/6037c4f0a65b7000113189d6/images/logo_color_xm219tbr.png');
-      height: 60px;
-      text-align: right;
-      padding: 10px;
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-
-    #mail-object {
-      font-weight: bold;
-      color: green;
-      margin-top: 20px;
-      position: relative;
-    }
-
-    #mail-text {
-      margin-top: 20px;
-    }
-
-    #button-container {
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    #button {
-      background-color: green;
-      color: white;
-      padding: 10px 20px;
-      font-weight: bold;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-
-    #button:hover {
-      background-color: darkgreen;
-    }
-
-    #photo-container {
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    #footer {
-      font-size: 12px;
-      margin-top: 20px;
-      text-align: center;
-    }
-
-
-    /* Ajout des media queries pour la mise en page responsive */
-    @media only screen and (max-width: 800px) {
-
-      /* Styles à appliquer lorsque la largeur de l'écran est inférieure ou égale à 800px */
-      #email-container {
-        width: 100%;
-        max-width: 600px;
-        margin: 20px auto;
-      }
-    }
-
-    @media only screen and (max-width: 480px) {
-
-      /* Styles à appliquer lorsque la largeur de l'écran est inférieure ou égale à 480px */
-      #email-container {
-        max-width: 300px;
-      }
-    }
-  </style>
-  <script>
-    function showAlert() {
-      var alertElement = document.getElementById('alert');
-      alertElement.classList.remove('hide');
-
-      setTimeout(function () {
-        alertElement.classList.add('hide');
-      }, 5000);
-    }
-  </script>
-
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body onload="showAlert()">
@@ -161,14 +11,10 @@
     <p>Alerte tentative de phishing.</p>
   </div>
 
+  <div id="banner"><img id="logo" src="./assets/logo.png" /></div>
 
-
-  <div id="banner"><img id="logo"
-      src="https://assets.dorik.com/6037c4f0a65b7000113189d6/images/logo_color_xm219tbr.png" /></div>
-
-  <h2><strong>Aie Aie Aie...</strong></h2>
-  <h2><strong>Vous avez commis une erreur en cliquant sur ce lien !</strong></h2>
-  <p>Mais pas de panique, rien de grave ne s’est produit. En revanche, tout aurait &eacute;t&eacute;
+  <h2><strong>Aie Aie Aie... Vous avez commis une erreur en cliquant sur ce lien !</strong></h2>
+  <p>Mais pas de panique, rien de grave ne s'est produit. En revanche, tout aurait &eacute;t&eacute;
     diff&eacute;rent si
     j'&eacute;tais quelqu'un de malveillant !</p>
   <p>Vous avez en effet cliqu&eacute; sur un e-mail de phishing et
@@ -179,7 +25,7 @@
   <div style="text-align: center;"><img style="text-align: center;"
       src="https://img.veeam.com/blog/wp-content/uploads/2021/05/06221010/phishing.png" /></div>
   <div style="text-align: center;">
-    <p><span style="color: green;">" Qu’est-ce qu’un mail de phishing ? <br /> Un e-mail est envoyé au
+    <p><span style="color: green;">" Qu'est-ce qu'un mail de phishing ? <br /> Un e-mail est envoyé au
         destinataire, qui
         tombe dans le piège et effectue l'action prévue. En conséquence, des informations sont dérobées ou un
         ordinateur
@@ -188,7 +34,7 @@
 
   <br />
   <br />
-  <p><br />Fort heureusement, il s’agit seulement ici d’une action de sensibilisation visant à vous
+  <p><br />Fort heureusement, il s'agit seulement ici d'une action de sensibilisation visant à vous
     informer des risques liés au phishing : nous tenons à vous rappeler l'importance de la
     sécurité informatique, incluant notamment la vigilance lors de la réception d'e-mails
     suspects..</p>
@@ -229,7 +75,7 @@
 
         <p>Lien vers le questionnaire : <a href="https://forms.gle/PB33MzeqaKaXkGXQ8"
             class="highlight-link">https://forms.gle/PB33MzeqaKaXkGXQ8</a></p>
-        <p>L’équipe informatique.</p>
+        <p>L'équipe informatique.</p>
 
     </div>
   </div>
@@ -263,3 +109,8 @@
       </tr>
     </tbody>
   </table>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
